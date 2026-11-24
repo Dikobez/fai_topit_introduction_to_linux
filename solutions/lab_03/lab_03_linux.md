@@ -1,8 +1,10 @@
 **Часть 1\. Стенд и подключение по паролю**
 
 1.   
-   ![][image1]  
-   ![][image2]
+   <img width="974" height="392" alt="image" src="https://github.com/user-attachments/assets/4e2cd9f7-789b-4bbc-a060-377cd14253ec" />
+
+   <img width="974" height="337" alt="image" src="https://github.com/user-attachments/assets/7dfe6c71-49bf-4522-ac87-0c144d625d3e" />
+
 
 2.   
    ![][image3]  
