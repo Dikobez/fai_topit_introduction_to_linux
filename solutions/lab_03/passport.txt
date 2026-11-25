@@ -1,0 +1,10 @@
+===host info===
+Mon Nov 23 11:22:21 PM MSK 2026
+debian-pc
+===credits===
+bdk-1
+myuser   sshd         2026-11-23 20:15 (10.0.2.2)
+===path===
+/shared
+PASSPORT
+script_passport_v3.sh

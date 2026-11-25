@@ -1,0 +1,129 @@
+=== ОТЧЁТ: инвентаризация и аудит безопасности (формат v3) ===
+Дата формирования: Mon Nov 23 11:22:21 PM MSK 2026
+Запустил: bdk-1 (права: bdk-1, группа sudo)
+
+=== kernel info ===
+6.12.107+deb13-amd64
+x86_64
+
+=== os version ===
+DEBIAN_VERSION_FULL=13.7
+
+=== cpu model ===
+Model name:                              AMD Ryzen 5 7430U with Radeon Graphics
+
+=== frequency ===
+cpu MHz		: 2295.630
+cpu MHz		: 2295.630
+
+=== core number ===
+CPU(s):                                  2
+
+=== cpu cache ===
+L1d cache:                               64 KiB (2 instances)
+L1i cache:                               64 KiB (2 instances)
+L2 cache:                                1 MiB (2 instances)
+L3 cache:                                32 MiB (2 instances)
+
+=== memory ===
+               total        used        free      shared  buff/cache   available
+Mem:           967Mi       807Mi        64Mi        52Ki       230Mi       159Mi
+Swap:          1.0Gi       145Mi       876Mi
+
+=== baseboard ===
+	Manufacturer: Oracle Corporation
+	Product Name: VirtualBox
+
+=== bios ===
+	Vendor: innotek GmbH
+	Version: VirtualBox
+	Release Date: 12/01/2006
+
+=== pci ===
+00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+00:02.0 VGA compatible controller: InnoTek Systemberatung GmbH VirtualBox Graphics Adapter
+00:03.0 Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+00:04.0 System peripheral: InnoTek Systemberatung GmbH VirtualBox Guest Service
+00:05.0 Audio device: Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (rev 01)
+00:07.0 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 08)
+00:0c.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB xHCI Host Controller
+00:0d.0 SATA controller: Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)
+
+=== Пользователи ===
+Пользователь: root (UID 0)
+  группы: root
+  последний вход: root             pts/0                                               Mon Nov 23 22:49:32 +0300 2026
+  последняя смена пароля: Nov 15, 2026
+
+Пользователь: nobody (UID 65534)
+  группы: nogroup
+  последний вход: нет данных
+  последняя смена пароля: Sep 16, 2026
+
+Пользователь: myuser (UID 1000)
+  группы: myuser cdrom floppy sudo audio dip video plugdev users netdev bluetooth sharegroup
+  последний вход: myuser           ssh      10.0.2.2                                   Mon Nov 23 20:15:25 +0300 2026
+  последняя смена пароля: Sep 16, 2026
+
+Пользователь: bdk-1 (UID 1001)
+  группы: bdk-1 sudo users sharegroup
+  последний вход: bdk-1            pts/0                                               Mon Nov 23 18:25:17 +0300 2026
+  последняя смена пароля: Oct 29, 2026
+
+Пользователь: u1 (UID 1002)
+  группы: u1 users project
+  последний вход: нет данных
+  последняя смена пароля: Nov 12, 2026
+
+Пользователь: u2 (UID 1003)
+  группы: u2 users project
+  последний вход: нет данных
+  последняя смена пароля: Nov 15, 2026
+
+Пользователь: u3 (UID 1004)
+  группы: u3 users project
+  последний вход: нет данных
+  последняя смена пароля: Nov 12, 2026
+
+Пользователь: u4 (UID 1005)
+  группы: u4 users readers sharegroup
+  последний вход: u4               pts/0                                               Mon Nov 23 23:18:17 +0300 2026
+  последняя смена пароля: Nov 12, 2026
+
+Пользователь: u5 (UID 1006)
+  группы: u5 users readers
+  последний вход: нет данных
+  последняя смена пароля: Nov 12, 2026
+
+
+=== Параметры sshd (эффективные значения) ===
+permitrootlogin = no (задан в конфигурации)
+port = 22 (по умолчанию)
+logingracetime = 30 (задан в конфигурации)
+maxauthtries = 2 (задан в конфигурации)
+passwordauthentication = no (задан в конфигурации)
+pubkeyauthentication = yes (задан в конфигурации)
+
+=== Топ-5 процессов по использованию памяти ===
+    PID    PPID USER     %MEM COMMAND
+    913     880 myuser   38.8 MainThread
+    924     880 myuser   12.0 MainThread
+    880     876 myuser   10.0 MainThread
+    992     924 myuser    7.8 copilot-runtime
+   1519     913 myuser    7.3 MainThread
+
+=== Подозрительные учётные записи ===
+Пользователи с пустым паролем: не обнаружено
+Пользователи с UID 0 кроме root: не обнаружено
+
+=== Файлы с suid в /usr/bin и /usr/sbin ===
+/usr/bin/chfn
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/chsh
+/usr/bin/umount
+/usr/bin/gpasswd
+/usr/bin/su
+/usr/bin/mount
+/usr/bin/sudo
